@@ -1,0 +1,57 @@
+input_script: loaded 42 directives from .\probe.input
+[VIDEO-ASPECT] aspect=native hud_stretch=1 hud_rows=40 mouse_menus=0
+[VIDEO] window 320x224 (4:3)
+[VIDEO] renderer name=direct3d11 vsync=1
+[audio] DRC bridge: 223721 Hz internal -> 48000 Hz device (preroll 200 ms, conceal on)
+[evidence] build exe=046acae0 rom=6204c11d (game 0.1.0 git unknown; engine git 252535d124-dirty; compiled Oct 23 2026 19:25:51; release); session 1 of this build
+[fiber] game stack 33554432 bytes (engine-owned, committed, guard page)
+[display] interlace_display=tv
+[pacer] target frame rate: 59.9401 fps
+[pacing] mode=fiber
+[rewind] 60 snapshots, interval 6 (6.0 seconds)
+[rewind] snapshot size 158313 bytes; full ring about 9.1 MiB
+[input_script] DUMP_RAM requested at frame 1001 (path=f1000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f1000.bin
+[input_script] DUMP_RAM requested at frame 2001 (path=f2000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f2000.bin
+[input_script] DUMP_RAM requested at frame 3001 (path=f3000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f3000.bin
+[input_script] DUMP_RAM requested at frame 4001 (path=f4000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f4000.bin
+[input_script] DUMP_RAM requested at frame 5001 (path=f5000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f5000.bin
+[input_script] DUMP_RAM requested at frame 6001 (path=f6000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f6000.bin
+[input_script] DUMP_RAM requested at frame 7001 (path=f7000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f7000.bin
+[input_script] DUMP_RAM requested at frame 8001 (path=f8000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f8000.bin
+[input_script] DUMP_RAM requested at frame 9001 (path=f9000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f9000.bin
+[input_script] DUMP_RAM requested at frame 10001 (path=f10000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f10000.bin
+[input_script] DUMP_RAM requested at frame 11001 (path=f11000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f11000.bin
+[input_script] DUMP_RAM requested at frame 12001 (path=f12000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f12000.bin
+[input_script] DUMP_RAM requested at frame 13001 (path=f13000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f13000.bin
+[input_script] DUMP_RAM requested at frame 14001 (path=f14000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f14000.bin
+[input_script] DUMP_RAM requested at frame 15001 (path=f15000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f15000.bin
+[input_script] DUMP_RAM requested at frame 16001 (path=f16000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f16000.bin
+[input_script] DUMP_RAM requested at frame 17001 (path=f17000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f17000.bin
+[input_script] DUMP_RAM requested at frame 18001 (path=f18000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f18000.bin
+[input_script] DUMP_RAM requested at frame 19001 (path=f19000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f19000.bin
+[input_script] DUMP_RAM requested at frame 20001 (path=f20000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_ramscan_final\f20000.bin
+[session] loop ended: running=1 frame=20100
+[DONE] 20100 frames completed
+[INTERP] hybrid_jmp/call_interpret: 1104 total calls, 0 unique true-miss addrs, 0 raw miss events
+[VBLA] cvblank_fires=0 VBla_Exit=0 VBla_Music=0 loc_B88=0
+[rewind] shutdown: 60 snapshots retained

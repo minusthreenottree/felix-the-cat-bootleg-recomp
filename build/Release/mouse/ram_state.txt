@@ -1,0 +1,25 @@
+Scripted menu-flow evidence
+===========================
+
+Build:        exe=046acae0 rom=6204c11d
+Settings:     aspect=16:9, hud_stretch=1, hud_rows=40, mouse_menus=1
+Input script: tools/menu_mouse.input (27 directives)
+Frames:       1400, --turbo
+
+Work-RAM offsets (Genesis work RAM starts at 0xFF0000):
+  0x0020  title screen marker ( on the title, 0 elsewhere)
+  0x5FFB  low byte of the long at 0x5FF8; 200 once gameplay is active
+  0x6017  selected menu row
+
+Dump              Frame  RAM 0x0020  RAM 0x5FFB  RAM 0x6017  Meaning
+----------------  -----  ----------  ----------  ----------  -----------------------------
+f_hover_opts.bin    861          129           0           1  title, Options row hovered
+f_options0.bin      951            0           0           0  options screen entered
+f_hover_sound.bin  1011            0           0           1  Sound row hovered
+f_sound_toggle.bin 1041            0           0           1  left click toggled Sound
+f_music_toggle.bin 1131            0           0           0  Music row hovered and toggled
+f_back_title.bin   1221          129           0           0  right click returned to title
+
+The matching PNG files in this directory show the same sequence. The game's
+own glove cursor moves to the hovered row; the option text changes from
+"??" to "???" for each toggle; the final capture is the title screen again.

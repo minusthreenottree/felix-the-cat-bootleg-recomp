@@ -1,0 +1,35 @@
+input_script: loaded 14 directives from .\long_rc.input
+[VIDEO-WIDESCREEN] requested ON (8 cells/side, black bars); content widening active only for widescreen-capable games in H32 gameplay modes
+[VIDEO-ASPECT] aspect=21:9 hud_stretch=1 hud_rows=40 mouse_menus=0
+[VIDEO] window 1046x448 (21:9)
+[VIDEO] renderer name=direct3d11 vsync=1
+[audio] DRC bridge: 223721 Hz internal -> 48000 Hz device (preroll 200 ms, conceal on)
+[evidence] build exe=046acae0 rom=6204c11d (game 0.1.0 git unknown; engine git 252535d124-dirty; compiled Oct 23 2026 19:25:51; release); session 1 of this build
+[fiber] game stack 33554432 bytes (engine-owned, committed, guard page)
+[display] interlace_display=tv
+[pacer] target frame rate: 59.9401 fps
+[pacing] mode=fiber
+[rewind] 60 snapshots, interval 6 (6.0 seconds)
+[rewind] snapshot size 158313 bytes; full ring about 9.1 MiB
+[input_script] SCREENSHOT requested at frame 2001 (path=rc_long_2000.png)
+[input_script] DUMP_RAM requested at frame 2001 (path=rc_long_ram_2000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_ram_2000.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_2000.png
+[input_script] SCREENSHOT requested at frame 3001 (path=rc_long_3000.png)
+[input_script] DUMP_RAM requested at frame 3001 (path=rc_long_ram_3000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_ram_3000.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_3000.png
+[input_script] SCREENSHOT requested at frame 4001 (path=rc_long_4000.png)
+[input_script] DUMP_RAM requested at frame 4001 (path=rc_long_ram_4000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_ram_4000.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_4000.png
+[PRESENT-DUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\present_21x9.png 1046x448 at frame 5000
+[input_script] SCREENSHOT requested at frame 5001 (path=rc_long_5000.png)
+[input_script] DUMP_RAM requested at frame 5001 (path=rc_long_ram_5000.bin)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_ram_5000.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\21x9\rc_long_5000.png
+[session] loop ended: running=1 frame=5100
+[DONE] 5100 frames completed
+[INTERP] hybrid_jmp/call_interpret: 552 total calls, 0 unique true-miss addrs, 0 raw miss events
+[VBLA] cvblank_fires=0 VBla_Exit=0 VBla_Music=0 loc_B88=0
+[rewind] shutdown: 60 snapshots retained

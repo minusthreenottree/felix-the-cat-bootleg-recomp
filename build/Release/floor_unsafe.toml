@@ -1,0 +1,22 @@
+# Floor-declined misses: the interpreter capsule did not return to the native caller (unbalanced stack or mis-decode).
+# Root-cause each one; the miss was left as a no-op for that session.
+# Accumulates across launches of this build only; a different build
+# (executable or ROM) starts a fresh file and keeps the old one as
+# floor_unsafe.prev.toml. Each entry comment gives the session and frame it was
+# first seen in.
+#
+# game:           FELIX (Felix the Cat (Bootleg))
+# build_id:       exe=60499ef3 rom=6204c11d
+# build_info:     game 0.1.0 git unknown; engine git 252535d124-dirty; compiled Oct 23 2026 19:25:51; release
+# sessions:       12
+# frames:         88058
+# session_frames: 10980 (latest session)
+# entries:        0
+# first_updated:  2026-10-24T08:57:54Z
+# last_updated:   2026-10-24T11:15:17Z
+format_version = 1
+evidence_kind = "floor_unsafe"
+
+[floor_unsafe]
+addresses = [
+]
