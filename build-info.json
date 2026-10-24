@@ -1,0 +1,9 @@
+{
+    "version":  "0.1.2",
+    "source_commit":  "252535d12476f5a697cf87082ea3e827f6430a1b",
+    "m68k_core_commit":  "e9ebf608933969903edd80ac0b79d41ddb2f013e",
+    "system":  "Windows",
+    "architecture":  "x64",
+    "configuration":  "Release",
+    "runtime":  "MSVC static CRT"
+}

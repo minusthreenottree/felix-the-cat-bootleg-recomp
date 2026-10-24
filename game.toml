@@ -1,0 +1,69 @@
+# game.toml — Felix the Cat (Unl) / Russian bootleg
+# Sega Genesis, 1 MB flat ROM at $000000-$0FFFFF, identity mapped.
+#
+# ROM identity (verified from the raw dump):
+#   Header title : "Felix the Cat"
+#   Region       : "JUE"
+#   Size         : 0x100000 (1 MB)
+#   CRC32        : BF9BA3BC
+#   Reset SSP    : 0x00000000  (the boot code sets A7 to 0 before any
+#                                stack use; the 68000's 24-bit bus wraps
+#                                the stack into the top of work RAM)
+#   Reset PC     : 0x000200
+#   H-Int (IRQ4) : 0x00032E  (vector table offset 0x70)
+#   V-Int (IRQ6) : 0x00033C  (vector table offset 0x78)
+#   All other exception vectors point at the shared handler 0x00032A.
+#
+# There is no community disassembly for this bootleg, so discovery is
+# heuristic (vector table + BSR/JSR/RTS walk) exactly like the puyo/rka
+# configurations.  The Tier-3 interpreter floor stays enabled in the game
+# adapter, so indirect object handlers that discovery misses still execute.
+
+[game]
+output_prefix = "felix"
+# Enable the validator-gated PC-relative jump-table walk; table-driven
+# games without a disassembly need it.
+jump_table_autodiscovery = true
+
+# ---------------------------------------------------------------------------
+# Per-game RAM layout.  The only load-bearing values are the stack fields;
+# the cosmetic Sonic-shaped fields are unknown for this title and stay 0.
+# ---------------------------------------------------------------------------
+[ram_layout]
+game_mode      = 0x000000
+vint_runcount  = 0x000000
+vint_routine   = 0x000000
+plc_pending    = 0x000000
+initial_ssp    = 0x00000000   # vector 0
+vbla_stack     = 0x00000000   # same stack pointer (24-bit wrap into RAM)
+intr_stack     = 0x00000000
+player_object  = 0x000000
+level_modes    = []
+
+[widescreen]
+# Felix's H32 playfield is a 32-cell (256px) plane. Reading beyond it wraps to
+# the opposite edge of the same row, so "extra" VDP columns show duplicated
+# level/HUD data instead of new level. Wide aspects are therefore presentation-
+# only: the runner trims the game's 8px side frame and scales the authentic
+# view to the selected window. No VDP columns are revealed and the raw
+# framebuffer stays identical to the interpreter oracle.
+capable = false
+max_extra_cells = 0
+
+[functions]
+# Reset entry, shared exception handler, and the two IRQ handlers.  These
+# come straight from the ROM vector table (0x000000-0x0001FF).
+extra = [0x000200, 0x00032A, 0x00032E, 0x00033C]
+
+# Indirect handlers that static discovery cannot reach from the vector table.
+# Each address was observed as a Tier-3 floor entry (floor_coverage.toml) and
+# checked against the disassembly: all four are real routines with normal
+# prologues/returns:
+#   $00E862  V-int sound-service callback (JSR $EA94 sound driver, JSR $325E PSG)
+#   $00E870  input/pad callback (writes $FF87AA / $FF73B0)
+#   $00E944  input/pad callback (writes $FF95E6 / $FF87A2)
+#   $00DDB4  per-frame game/world update (calls JSR $E862 and the VRAM helpers)
+# Registering them late keeps their direct-call closure visible but disables
+# speculative table walking during that second pass.
+late_extra = [0x00DDB4, 0x00E862, 0x00E870, 0x00E944]
+blacklist = []
