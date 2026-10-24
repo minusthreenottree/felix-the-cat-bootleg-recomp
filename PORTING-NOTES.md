@@ -132,7 +132,8 @@ Sonic-shaped `game_mode`, `vint_runcount`, `vint_routine`, `plc_pending`, and
 ## 4. Build
 
 Prerequisites: CMake 3.16+, Visual Studio 2019 (x64), and the vendored SDL2
-under `sdk/runner/external/SDL2`. The `sdk/` tree is the pinned framework
+under `sdk/runner/external/SDL2`. The `sdk/` tree is the pinned framework 
+(if sdk is not there clone it from segagenesisrecomp)
 checkout; `CMakeLists.txt` also accepts `-DGENESIS_RECOMP_ROOT=<path>`.
 
 ```powershell
