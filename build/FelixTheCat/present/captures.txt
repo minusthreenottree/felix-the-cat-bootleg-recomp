@@ -1,0 +1,24 @@
+Composed-window captures
+========================
+
+Build:    exe=046acae0 rom=6204c11d
+Settings: window_scale = 2, aspect per file, hud_stretch = 1, hud_rows = 40,
+          mouse_menus = 0
+Source:   GENESIS_PRESENT_DUMP, after aspect/HUD composition and before
+          SDL_RenderPresent
+
+File                      Size       Aspect  Frame  Contents
+------------------------  ---------  ------  -----  -------------------------------
+present_16x10.png         716x448    16:10    5000  gameplay, widened H32
+present_16x9_game.png     796x448    16:9     5000  gameplay, widened H32
+present_21x9.png          1046x448   21:9     5000  gameplay, 384 px canvas upscaled
+present_32x9.png          1592x448   32:9     5000  gameplay, 384 px canvas upscaled
+present_16x9_title.png    796x448    16:9      800  H40 title, pillarboxed
+present_32x9_title.png    1592x448   32:9      800  H40 title, pillarboxed
+
+All gameplay captures show the widened H32 playfield filling the width and the
+bottom 40-row HUD band stretched independently to the full window width. The
+title captures keep the authentic 320 px artwork centered; menu content is
+never stretched. Gameplay runs used tools/long_rc.input; title runs used no
+input script. Matching .err files contain the window size, build id, and
+PRESENT-DUMP line for each capture.

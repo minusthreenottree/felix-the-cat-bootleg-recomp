@@ -1,0 +1,18 @@
+[VIDEO-WIDESCREEN] requested ON (8 cells/side, black bars); content widening active only for widescreen-capable games in H32 gameplay modes
+[VIDEO-ASPECT] aspect=16:9 hud_stretch=1 hud_rows=40 mouse_menus=0
+[VIDEO] window 796x448 (16:9)
+[VIDEO] renderer name=direct3d11 vsync=1
+[audio] DRC bridge: 223721 Hz internal -> 48000 Hz device (preroll 200 ms, conceal on)
+[evidence] build exe=046acae0 rom=6204c11d (game 0.1.0 git unknown; engine git 252535d124-dirty; compiled Oct 23 2026 19:25:51; release); session 1 of this build
+[fiber] game stack 33554432 bytes (engine-owned, committed, guard page)
+[display] interlace_display=tv
+[pacer] target frame rate: 59.9401 fps
+[pacing] mode=fiber
+[rewind] 60 snapshots, interval 6 (6.0 seconds)
+[rewind] snapshot size 158313 bytes; full ring about 9.1 MiB
+[PRESENT-DUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_final_present3\present_16x9_title.png 796x448 at frame 800
+[session] loop ended: running=1 frame=810
+[DONE] 810 frames completed
+[INTERP] hybrid_jmp/call_interpret: 0 total calls, 0 unique true-miss addrs, 0 raw miss events
+[VBLA] cvblank_fires=0 VBla_Exit=0 VBla_Music=0 loc_B88=0
+[rewind] shutdown: 60 snapshots retained

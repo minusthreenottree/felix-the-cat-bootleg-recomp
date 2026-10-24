@@ -1,0 +1,49 @@
+input_script: loaded 27 directives from .\mouse.input
+[VIDEO-WIDESCREEN] requested ON (8 cells/side, black bars); content widening active only for widescreen-capable games in H32 gameplay modes
+[VIDEO-ASPECT] aspect=16:9 hud_stretch=1 hud_rows=40 mouse_menus=1
+[VIDEO] window 796x448 (16:9)
+[VIDEO] renderer name=direct3d11 vsync=1
+[audio] DRC bridge: 223721 Hz internal -> 48000 Hz device (preroll 200 ms, conceal on)
+[evidence] build exe=046acae0 rom=6204c11d (game 0.1.0 git unknown; engine git 252535d124-dirty; compiled Oct 23 2026 19:25:51; release); session 1 of this build
+[fiber] game stack 33554432 bytes (engine-owned, committed, guard page)
+[display] interlace_display=tv
+[pacer] target frame rate: 59.9401 fps
+[pacing] mode=fiber
+[rewind] 60 snapshots, interval 6 (6.0 seconds)
+[rewind] snapshot size 158313 bytes; full ring about 9.1 MiB
+[input_script] MOUSE 80,165 at frame 801
+[input_script] DUMP_RAM requested at frame 861 (path=f_hover_opts.bin)
+[input_script] SCREENSHOT requested at frame 861 (path=f_hover_opts.png)
+[input_script] CLICK LEFT at frame 861
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_hover_opts.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_hover_opts.png
+[input_script] DUMP_RAM requested at frame 951 (path=f_options0.bin)
+[input_script] SCREENSHOT requested at frame 951 (path=f_options0.png)
+[input_script] MOUSE 80,64 at frame 951
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_options0.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_options0.png
+[input_script] DUMP_RAM requested at frame 1011 (path=f_hover_sound.bin)
+[input_script] SCREENSHOT requested at frame 1011 (path=f_hover_sound.png)
+[input_script] CLICK LEFT at frame 1011
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_hover_sound.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_hover_sound.png
+[input_script] DUMP_RAM requested at frame 1041 (path=f_sound_toggle.bin)
+[input_script] SCREENSHOT requested at frame 1041 (path=f_sound_toggle.png)
+[input_script] MOUSE 80,48 at frame 1041
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_sound_toggle.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_sound_toggle.png
+[input_script] CLICK LEFT at frame 1101
+[input_script] DUMP_RAM requested at frame 1131 (path=f_music_toggle.bin)
+[input_script] SCREENSHOT requested at frame 1131 (path=f_music_toggle.png)
+[input_script] CLICK RIGHT at frame 1131
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_music_toggle.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_music_toggle.png
+[input_script] DUMP_RAM requested at frame 1221 (path=f_back_title.bin)
+[input_script] SCREENSHOT requested at frame 1221 (path=f_back_title.png)
+[RAMDUMP] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_back_title.bin
+[SCREENSHOT] wrote C:\Users\Windows\AppData\Local\Temp\felix_mouse_final2\f_back_title.png
+[session] loop ended: running=1 frame=1400
+[DONE] 1400 frames completed
+[INTERP] hybrid_jmp/call_interpret: 0 total calls, 0 unique true-miss addrs, 0 raw miss events
+[VBLA] cvblank_fires=0 VBla_Exit=0 VBla_Music=0 loc_B88=0
+[rewind] shutdown: 60 snapshots retained
