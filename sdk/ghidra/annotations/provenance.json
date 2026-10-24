@@ -1,0 +1,12 @@
+{
+  "sonic1": {
+    "source": "sonicthehedgehog/s1disasm",
+    "commit": "d343882f75b13646ba50ae06b1486f4bd05cb738",
+    "rom_sha256": "46160baa06362c711c9f1a5017cb7371026444936c8af5e93a78996cf32ff2a6",
+    "build": "build.lua",
+    "options": {
+      "Revision": 0
+    },
+    "code_labels": 1793
+  }
+}
