@@ -1,0 +1,25 @@
+# JMP-table dispatch audit
+# total sites: 3
+#
+# Summary:
+#   static_target              2  (JMP with statically resolved target — safe)
+#   in_function_switch         0  (JMP(PC,Dn.W) compiled to in-function switch+goto — safe, this is the Duff's-device fix)
+#   dynamic_register           0  (JMP (An)/(d,An)/(An,Xn) — runtime address from register, safe via call_by_address)
+#   fallback_hybrid                — JMP(PC,Dn.W) routed through hybrid_jmp_interpret; subdivided:
+#     function_entry           0    (base IS a registered function — call_by_address resolves it directly)
+#     bra_w_trampoline         0    (base opcode = 0x6000; runtime miss feedback works)
+#     offset_table             1    (base is a dc.w (target-base) table; 1+ entries decode to functions — runtime resolves it)
+#     INTERIOR_UNRESOLVED      0    (DANGER: base is interior to a function, NOT one of the safe patterns above — silent failure class like pre-fix CPZ)
+#     external_unresolved      0    (base outside any known function — investigate)
+#   unsupported                0  (decoder hit a JMP mode the emitter doesn't handle)
+#
+# When `interior_unresolved` is non-zero, inspect each site — these are
+# Sonic-2-CPZ-style silent-failure candidates. Either the recompiler's
+# Duff's-device probe (probe_pc_idx_targets) didn't match, or the table
+# really is a new pattern that needs new codegen support.
+#
+# Format: <jmp_addr>  in func <func>  base <base>  kind=<kind>[ targets=N]
+
+$000324  in func $000200  base $000512  kind=static_target
+$00032A  in func $00032A  base $000200  kind=static_target
+$00B2C2  in func $00B224  base $00B2C6  kind=fallback_hybrid/offset_table

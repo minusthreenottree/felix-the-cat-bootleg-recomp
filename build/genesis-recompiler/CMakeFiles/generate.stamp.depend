@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/cmake.verify_globs
+C:/Genesis/Recomps/Felix2/sdk/external/m68k-recomp-core/cmake/M68kRecompCore.cmake
+C:/Genesis/Recomps/Felix2/sdk/recompiler/CMakeLists.txt

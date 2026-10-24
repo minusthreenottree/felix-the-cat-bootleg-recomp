@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\sim_step.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\rb_state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\rb_probe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\local_states.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\overlay_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\glue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\runtime_evidence.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\fiber_compat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\crash_report.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\input_script.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\gamepad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\input_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\app_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\chip_trace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\cosim_state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\event_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\ym2612_ymfm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_opn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_ssg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_adpcm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_pcm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\sn76489.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\mixer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\observability.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\audio_shadow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\fm_shadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\color_lut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\genesis_vdp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\genesis_bus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\genesis_machine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu\z80.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\m68k_interp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\cmd_server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\frame_snapshots.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\m68k_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\rom_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part00.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part01.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part02.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part03.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part04.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part05.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part06.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part07.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part08.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part09.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part17.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part18.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part19.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part20.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part21.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part23.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part24.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part25.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part26.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part27.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part28.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part29.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part30.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part31.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_dispatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_layout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\felix_spec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F260A025-69DF-3F67-8E60-93FE26A3222E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B078E1E1-F61E-36F3-B65F-0EB7602F7373}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

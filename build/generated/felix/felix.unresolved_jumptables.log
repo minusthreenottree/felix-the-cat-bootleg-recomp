@@ -1,0 +1,7 @@
+# 0 PC-indexed JMP dispatch sites with no static table coverage.
+# Format: <jmp_pc> <table_base> <ext_word> <reason>
+# Reason: 0=no manual jump_table directive, 1=auto-walk yielded too few entries, 2=non-PC-indexed JMP variant
+# Each line is one runtime dynamic dispatch — add a
+# matching game.toml [[jump_table]] entry (or update the
+# disasm_jumptables discovery file) after validation
+# to convert it to static enumeration.

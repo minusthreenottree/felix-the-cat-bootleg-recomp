@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\c072f3ec23b1e1d893e804915878c1a0\FelixTheCatRecomp_build_info.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\FelixTheCatRecomp_build_info" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F260A025-69DF-3F67-8E60-93FE26A3222E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

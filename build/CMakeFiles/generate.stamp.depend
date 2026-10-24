@@ -1,0 +1,43 @@
+# CMake generation dependency list for this directory.
+C:/Genesis/Recomps/Felix2/CMakeLists.txt
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/4.4.2/CMakeCCompiler.cmake
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/4.4.2/CMakeCXXCompiler.cmake
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/4.4.2/CMakeRCCompiler.cmake
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/4.4.2/CMakeSystem.cmake
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/cmake.verify_globs
+C:/Genesis/Recomps/Felix2/sdk/cmake/GenesisRecompGenerated.cmake
+C:/Genesis/Recomps/Felix2/sdk/cmake/GenesisRecompRunner.cmake
+C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/cmake/sdl2-config-version.cmake
+C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/cmake/sdl2-config.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/FeatureSummary.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake

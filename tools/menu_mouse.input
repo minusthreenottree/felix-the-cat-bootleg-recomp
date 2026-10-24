@@ -1,0 +1,32 @@
+# Felix title/options mouse flow.
+# Copy the release files to a scratch directory, set mouse_menus = 1, and run
+# from there (the script writes f_*.png/bin into the current directory). Keep
+# the physical pointer still; scripted MOUSE/CLICK directives feed the same
+# adapter as real SDL events.
+WAIT 800
+MOUSE 80 165
+WAIT 60
+DUMP_RAM f_hover_opts.bin
+SCREENSHOT f_hover_opts.png
+CLICK LEFT
+WAIT 90
+DUMP_RAM f_options0.bin
+SCREENSHOT f_options0.png
+MOUSE 80 64
+WAIT 60
+DUMP_RAM f_hover_sound.bin
+SCREENSHOT f_hover_sound.png
+CLICK LEFT
+WAIT 30
+DUMP_RAM f_sound_toggle.bin
+SCREENSHOT f_sound_toggle.png
+MOUSE 80 48
+WAIT 60
+CLICK LEFT
+WAIT 30
+DUMP_RAM f_music_toggle.bin
+SCREENSHOT f_music_toggle.png
+CLICK RIGHT
+WAIT 90
+DUMP_RAM f_back_title.bin
+SCREENSHOT f_back_title.png

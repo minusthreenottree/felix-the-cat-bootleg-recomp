@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Genesis/Recomps/Felix2/build/cmake_install.cmake",
+		"C:/Genesis/Recomps/Felix2/build/rbengine/cmake_install.cmake",
+		"C:/Genesis/Recomps/Felix2/build/genesis-recompiler/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

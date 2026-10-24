@@ -1,0 +1,21 @@
+diff --git a/profiles/genesis/code_generator.c b/profiles/genesis/code_generator.c
+index 0d3f4bf..8bd197d 100644
+--- a/profiles/genesis/code_generator.c
++++ b/profiles/genesis/code_generator.c
+@@ -3275,7 +3275,15 @@ static void emit_instr(FILE *f, const GenesisRom *rom,
+          * PSGSetFreq — corrupting downstream Bcc paths that read X
+          * (squelched notes, drift). */
+         ExtReader er2; er_init(&er2, instr);
+-        emit_ea_store_ex(f, instr, instr->src_ea, sz, &er2, "0", 1);
++        /* CLR performs no read, so it cannot use the rmw=1 store path:
++         * that path expects emit_ea_load_ex to have applied the -(An)/(An)+
++         * address update already.  With rmw=1 a `clr.l -(a7)` silently wrote
++         * to the old SP and never advanced it (Felix boot drifted A7 by
++         * 4 bytes per pushed frame).  rmw=0 emits the full update here. */
++        emit_ea_store_ex(f, instr, instr->src_ea, sz, &er2, "0", 0);
++        if (*has_sp_adjust && instr->src_ea == ((EA_An_PRE << 3) | 7))
++            fprintf(f, "  _sp_popped -= %d; /* CLR -(SP) bytes */\n",
++                    sz == M68K_SIZE_L ? 4 : 2);
+         fprintf(f, "  g_cpu.SR = (g_cpu.SR & ~0x0Fu) | (1u<<2);\n");
+         break;
+     }

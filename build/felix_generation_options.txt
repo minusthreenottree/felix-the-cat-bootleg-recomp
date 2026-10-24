@@ -1,0 +1,9 @@
+pipeline=2
+prefix=felix
+game=C:/Genesis/Recomps/Felix2
+rom=C:/Genesis/Recomps/Felix2/Felix the Cat (Unl).bin
+reverse_debug=0
+rom_present=1
+input=C:/Genesis/Recomps/Felix2/CMakeLists.txt
+input=C:/Genesis/Recomps/Felix2/README.txt
+input=C:/Genesis/Recomps/Felix2/game.toml

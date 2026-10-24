@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\main_genesis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\rom_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\common\m68k_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\common\m68k_validator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\common\annotations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\profiles\genesis\return_capture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\profiles\genesis\function_finder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\profiles\genesis\code_generator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\m68k-recomp-core\profiles\genesis\codegen_diag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\game_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\toml.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B078E1E1-F61E-36F3-B65F-0EB7602F7373}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

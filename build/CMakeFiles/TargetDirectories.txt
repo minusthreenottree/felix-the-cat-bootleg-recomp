@@ -1,0 +1,12 @@
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/genesisrecomp_generate_felix.dir
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/FelixTheCatRecomp.dir
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/FelixTheCatRecomp_build_info.dir
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/INSTALL.dir
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/ALL_BUILD.dir
+C:/Genesis/Recomps/Felix2/build/CMakeFiles/ZERO_CHECK.dir
+C:/Genesis/Recomps/Felix2/build/rbengine/CMakeFiles/retcomm_rbengine.dir
+C:/Genesis/Recomps/Felix2/build/rbengine/CMakeFiles/INSTALL.dir
+C:/Genesis/Recomps/Felix2/build/rbengine/CMakeFiles/ALL_BUILD.dir
+C:/Genesis/Recomps/Felix2/build/genesis-recompiler/CMakeFiles/GenesisRecomp.dir
+C:/Genesis/Recomps/Felix2/build/genesis-recompiler/CMakeFiles/INSTALL.dir
+C:/Genesis/Recomps/Felix2/build/genesis-recompiler/CMakeFiles/ALL_BUILD.dir

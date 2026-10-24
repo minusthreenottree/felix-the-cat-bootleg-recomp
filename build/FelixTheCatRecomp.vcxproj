@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B6B459B-35EB-3C3A-ADBA-BC2245D4CE30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>FelixTheCatRecomp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Genesis\Recomps\Felix2\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FelixTheCatRecomp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FelixTheCatRecomp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Genesis\Recomps\Felix2\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FelixTheCatRecomp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FelixTheCatRecomp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Genesis\Recomps\Felix2\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FelixTheCatRecomp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FelixTheCatRecomp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Genesis\Recomps\Felix2\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FelixTheCatRecomp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FelixTheCatRecomp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/cmake/../include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4102;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION="0.1.0";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION=\"0.1.0\";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying SDL2.dll</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/lib/x64/SDL2.dll C:/Genesis/Recomps/Felix2/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2main.lib;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2.lib;ws2_32.lib;comdlg32.lib;rbengine\Debug\retcomm_rbengine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /CETCOMPAT:NO</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Genesis/Recomps/Felix2/build/Debug/FelixTheCatRecomp.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Genesis/Recomps/Felix2/build/Debug/FelixTheCatRecomp.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/cmake/../include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4102;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION="0.1.0";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION=\"0.1.0\";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying SDL2.dll</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/lib/x64/SDL2.dll C:/Genesis/Recomps/Felix2/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2main.lib;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2.lib;ws2_32.lib;comdlg32.lib;rbengine\Release\retcomm_rbengine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /CETCOMPAT:NO</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Genesis/Recomps/Felix2/build/Release/FelixTheCatRecomp.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Genesis/Recomps/Felix2/build/Release/FelixTheCatRecomp.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/cmake/../include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4102;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION="0.1.0";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION=\"0.1.0\";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying SDL2.dll</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/lib/x64/SDL2.dll C:/Genesis/Recomps/Felix2/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2main.lib;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2.lib;ws2_32.lib;comdlg32.lib;rbengine\MinSizeRel\retcomm_rbengine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /CETCOMPAT:NO</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Genesis/Recomps/Felix2/build/MinSizeRel/FelixTheCatRecomp.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Genesis/Recomps/Felix2/build/MinSizeRel/FelixTheCatRecomp.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/cmake/../include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4102;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION="0.1.0";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;INCLUDE_GENERATED_CODE=1;ENABLE_RECOMPILED_CODE=1;OWN_BACKEND=1;DEFAULT_DEBUG_PORT=4382;GENESIS_GAME_VERSION=\"0.1.0\";GENESIS_BATCHED_PLANES=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Genesis\Recomps\Felix2\sdk\runner;C:\Genesis\Recomps\Felix2\sdk\runner\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src;C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu;C:\Genesis\Recomps\Felix2\sdk\runner\external\clowncommon;C:\Genesis\Recomps\Felix2\sdk\runner\video;C:\Genesis\Recomps\Felix2\sdk\recompiler\src;C:\Genesis\Recomps\Felix2;C:\Genesis\Recomps\Felix2\build\generated\felix;C:\Genesis\Recomps\Felix2\build\genesis_build_info\FelixTheCatRecomp;C:\Genesis\Recomps\Felix2\sdk\external\rbengine\include;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying SDL2.dll</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Genesis/Recomps/Felix2/sdk/runner/external/SDL2/SDL2-2.28.5/lib/x64/SDL2.dll C:/Genesis/Recomps/Felix2/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2main.lib;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\..\lib\x64\SDL2.lib;ws2_32.lib;comdlg32.lib;rbengine\RelWithDebInfo\retcomm_rbengine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /CETCOMPAT:NO</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Genesis/Recomps/Felix2/build/RelWithDebInfo/FelixTheCatRecomp.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Genesis/Recomps/Felix2/build/RelWithDebInfo/FelixTheCatRecomp.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Genesis/Recomps/Felix2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-file C:/Genesis/Recomps/Felix2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCXXCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeRCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeSystem.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\cmake.verify_globs;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompGenerated.cmake;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompRunner.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config-version.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Genesis/Recomps/Felix2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-file C:/Genesis/Recomps/Felix2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCXXCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeRCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeSystem.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\cmake.verify_globs;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompGenerated.cmake;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompRunner.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config-version.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Genesis/Recomps/Felix2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-file C:/Genesis/Recomps/Felix2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCXXCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeRCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeSystem.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\cmake.verify_globs;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompGenerated.cmake;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompRunner.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config-version.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Genesis/Recomps/Felix2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-file C:/Genesis/Recomps/Felix2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeCXXCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeRCCompiler.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\4.4.2\CMakeSystem.cmake;C:\Genesis\Recomps\Felix2\build\CMakeFiles\cmake.verify_globs;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompGenerated.cmake;C:\Genesis\Recomps\Felix2\sdk\cmake\GenesisRecompRunner.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config-version.cmake;C:\Genesis\Recomps\Felix2\sdk\runner\external\SDL2\SDL2-2.28.5\cmake\sdl2-config.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Genesis\Recomps\Felix2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\main.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\sim_step.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\rb_state.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\rb_probe.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\local_states.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\overlay_draw.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\glue.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\runtime_evidence.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\fiber_compat.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\crash_report.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\input_script.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\gamepad.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\input_map.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\app_config.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\chip_trace.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\cosim_state.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\event_queue.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\ym2612_ymfm.cpp" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_opn.cpp" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_ssg.cpp" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_adpcm.cpp" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\ymfm\src\ymfm_pcm.cpp" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\sn76489.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\mixer.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\observability.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\audio_shadow.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\audio\fm_shadow.cpp" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\color_lut.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\genesis_vdp.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\genesis_bus.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\video\genesis_machine.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\external\superzazu\z80.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\m68k_interp.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\cmd_server.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\runner\frame_snapshots.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\m68k_decoder.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\recompiler\src\rom_parser.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part00.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part01.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part02.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part03.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part04.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part05.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part06.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part07.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part08.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part09.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part10.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part11.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part12.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part13.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part14.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part15.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part16.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part17.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part18.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part19.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part20.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part21.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part22.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part23.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part24.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part25.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part26.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part27.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part28.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part29.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part30.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_part31.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_dispatch.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\build\generated\felix\felix_layout.c" />
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\felix_spec.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Genesis\Recomps\Felix2\build\ZERO_CHECK.vcxproj">
+      <Project>{110551A5-0A4A-3268-9171-736B13EA818C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Genesis\Recomps\Felix2\build\FelixTheCatRecomp_build_info.vcxproj">
+      <Project>{34957177-B1F8-375D-BF04-01E16B143C3A}</Project>
+      <Name>FelixTheCatRecomp_build_info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Genesis\Recomps\Felix2\build\genesis-recompiler\GenesisRecomp.vcxproj">
+      <Project>{AD01F401-8B24-3BEE-80F1-1D1C3B63FDC5}</Project>
+      <Name>GenesisRecomp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Genesis\Recomps\Felix2\build\genesisrecomp_generate_felix.vcxproj">
+      <Project>{42C63C35-02C0-3903-811D-246483FB5422}</Project>
+      <Name>genesisrecomp_generate_felix</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Genesis\Recomps\Felix2\build\rbengine\retcomm_rbengine.vcxproj">
+      <Project>{65F36F5A-48E1-3A7D-9EEE-0FFEAC0EADB4}</Project>
+      <Name>retcomm_rbengine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

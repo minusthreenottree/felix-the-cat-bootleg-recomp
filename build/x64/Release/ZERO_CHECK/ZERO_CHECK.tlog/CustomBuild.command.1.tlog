@@ -1,0 +1,10 @@
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\C072F3EC23B1E1D893E804915878C1A0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Genesis/Recomps/Felix2/build/FelixTheCatRecomp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,14 @@
+WAIT 400
+PRESS START 6
+WAIT 1600
+SCREENSHOT rc_long_2000.png
+DUMP_RAM rc_long_ram_2000.bin
+WAIT 1000
+SCREENSHOT rc_long_3000.png
+DUMP_RAM rc_long_ram_3000.bin
+WAIT 1000
+SCREENSHOT rc_long_4000.png
+DUMP_RAM rc_long_ram_4000.bin
+WAIT 1000
+SCREENSHOT rc_long_5000.png
+DUMP_RAM rc_long_ram_5000.bin

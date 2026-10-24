@@ -1,0 +1,11 @@
+WAIT 400
+PRESS START 6
+WAIT 100
+SCREENSHOT rc_play_500.png
+DUMP_RAM rc_play_ram_500.bin
+WAIT 300
+SCREENSHOT rc_play_800.png
+DUMP_RAM rc_play_ram_800.bin
+WAIT 400
+SCREENSHOT rc_play_1200.png
+DUMP_RAM rc_play_ram_1200.bin

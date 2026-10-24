@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\125c6bb0a854ce14d69e88ae835f28ba\felix_generation.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_cycles.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_decls.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_dispatch.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_layout.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part00.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part01.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part02.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part03.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part04.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part05.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part06.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part07.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part08.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part09.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part10.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part11.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part12.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part13.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part14.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part15.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part16.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part17.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part18.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part19.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part20.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part21.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part22.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part23.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part24.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part25.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part26.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part27.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part28.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part29.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part30.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\732d67a4766508079392d0e1e77b6216\felix_part31.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\c072f3ec23b1e1d893e804915878c1a0\genesisrecomp_generate_felix.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Genesis\Recomps\Felix2\build\CMakeFiles\genesisrecomp_generate_felix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F260A025-69DF-3F67-8E60-93FE26A3222E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,478 @@
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\125C6BB0A854CE14D69E88AE835F28BA\FELIX_GENERATION.STAMP.RULE
+setlocal
+cd C:\Genesis\Recomps\Felix2
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f C:/Genesis/Recomps/Felix2/build/felix_generation.stamp C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part00.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part01.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part02.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part03.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part04.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part05.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part06.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part07.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part08.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part09.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part10.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part11.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part12.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part13.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part14.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part15.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part16.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part17.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part18.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part19.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part20.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part21.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part22.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part23.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part24.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part25.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part26.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part27.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part28.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part29.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part30.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part31.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_dispatch.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_layout.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_decls.h C:/Genesis/Recomps/Felix2/build/generated/felix/felix_cycles.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_dispatch_audit.log C:/Genesis/Recomps/Felix2/build/generated/felix/felix.unresolved_jumptables.log
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove_directory C:/Genesis/Recomps/Felix2/build/generation-stage/felix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DREQUIRED_FILE=C:/Genesis/Recomps/Felix2/Felix the Cat (Unl).bin" "-DREQUIRED_LABEL=felix ROM" -P C:/Genesis/Recomps/Felix2/sdk/cmake/RequireFile.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Genesis/Recomps/Felix2/build/generation-stage/felix C:/Genesis/Recomps/Felix2/build/generated/felix
+if %errorlevel% neq 0 goto :cmEnd
+C:\Genesis\Recomps\Felix2\build\Release\GenesisRecomp.exe "Felix the Cat (Unl).bin" --game game.toml --output-dir C:/Genesis/Recomps/Felix2/build/generation-stage/felix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_dispatch_audit.log C:/Genesis/Recomps/Felix2/build/generated/felix/felix_dispatch_audit.log
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix.unresolved_jumptables.log C:/Genesis/Recomps/Felix2/build/generated/felix/felix.unresolved_jumptables.log
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/felix_generation.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_CYCLES.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_cycles.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_cycles.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_cycles.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_DECLS.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_decls.h C:/Genesis/Recomps/Felix2/build/generated/felix/felix_decls.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_decls.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_DISPATCH.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_dispatch.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_dispatch.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_dispatch.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_LAYOUT.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_layout.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_layout.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_layout.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART00.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part00.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part00.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part00.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART01.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part01.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part01.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part01.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART02.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part02.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part02.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part02.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART03.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part03.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part03.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part03.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART04.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part04.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part04.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part04.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART05.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part05.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part05.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part05.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART06.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part06.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part06.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part06.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART07.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part07.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part07.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part07.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART08.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part08.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part08.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part08.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART09.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part09.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part09.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part09.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART10.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part10.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part10.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part10.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART11.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part11.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part11.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part11.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART12.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part12.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part12.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part12.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART13.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part13.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part13.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part13.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART14.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part14.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part14.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part14.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART15.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part15.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part15.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part15.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART16.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part16.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part16.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part16.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART17.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part17.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part17.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part17.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART18.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part18.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part18.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part18.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART19.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part19.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part19.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part19.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART20.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part20.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part20.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part20.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART21.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part21.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part21.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part21.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART22.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part22.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part22.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part22.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART23.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part23.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part23.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part23.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART24.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part24.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part24.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part24.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART25.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part25.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part25.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part25.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART26.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part26.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part26.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part26.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART27.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part27.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part27.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part27.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART28.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part28.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part28.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part28.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART29.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part29.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part29.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part29.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART30.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part30.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part30.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part30.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\732D67A4766508079392D0E1E77B6216\FELIX_PART31.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Genesis/Recomps/Felix2/build/generation-stage/felix/felix_part31.c C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part31.c
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Genesis/Recomps/Felix2/build/generated/felix/felix_part31.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\C072F3EC23B1E1D893E804915878C1A0\GENESISRECOMP_GENERATE_FELIX.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-file C:/Genesis/Recomps/Felix2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

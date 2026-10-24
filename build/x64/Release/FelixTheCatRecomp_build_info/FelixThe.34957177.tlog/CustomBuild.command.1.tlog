@@ -1,0 +1,20 @@
+^C:\GENESIS\RECOMPS\FELIX2\BUILD\CMAKEFILES\C072F3EC23B1E1D893E804915878C1A0\FELIXTHECATRECOMP_BUILD_INFO.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUT=C:/Genesis/Recomps/Felix2/build/genesis_build_info/FelixTheCatRecomp/genesis_build_info.h -DENGINE_DIR=C:/Genesis/Recomps/Felix2/sdk -DGAME_DIR=C:/Genesis/Recomps/Felix2 "-DGIT=C:/Program Files/Git/cmd/git.exe" -DGAME_VERSION=0.1.0 -P C:/Genesis/Recomps/Felix2/sdk/cmake/GenesisBuildInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GENESIS\RECOMPS\FELIX2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Genesis/Recomps/Felix2 -BC:/Genesis/Recomps/Felix2/build --check-stamp-file C:/Genesis/Recomps/Felix2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

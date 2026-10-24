@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\rbengine\src\snap\rbe_snap_ring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Genesis\Recomps\Felix2\sdk\external\rbengine\src\util\rbe_mono_ms.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Genesis\Recomps\Felix2\sdk\external\rbengine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B078E1E1-F61E-36F3-B65F-0EB7602F7373}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
